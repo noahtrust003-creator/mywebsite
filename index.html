@@ -1,34 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            text-align:center;
-            margin-top:100px;
-        }
-        h1{
-            color:blue;
-        }
-        button{
-            padding:10px 20px;
-            font-size:16px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Business</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+header{
+background:#222;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#333;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+}
+
+.hero{
+padding:100px 20px;
+text-align:center;
+background:#f4f4f4;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#007bff;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:5px;
+}
+
+.services{
+padding:60px 20px;
+text-align:center;
+}
+
+.service-box{
+display:inline-block;
+width:300px;
+padding:20px;
+margin:10px;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+.contact{
+background:#f4f4f4;
+padding:60px 20px;
+text-align:center;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+
 </head>
 <body>
 
-<h1>Welcome To My Website</h1>
-<p>This website is created by me.</p>
+<header>
+<h1>My Business</h1>
+<p>Professional Services For Your Success</p>
+</header>
 
-<button onclick="hello()">Click Here</button>
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
 
-<script>
-function hello(){
-    alert("Welcome!");
-}
-</script>
+<section class="hero">
+<h1>Grow Your Business</h1>
+<p>We provide high quality business solutions.</p>
+<a href="#" class="btn">Get Started</a>
+</section>
+
+<section class="services">
+<h2>Our Services</h2><br>
+
+<div class="service-box">
+<h3>Web Development</h3>
+<p>Professional websites for your business.</p>
+</div>
+
+<div class="service-box">
+<h3>Digital Marketing</h3>
+<p>Increase your online presence and sales.</p>
+</div>
+
+<div class="service-box">
+<h3>Consulting</h3>
+<p>Expert advice for business growth.</p>
+</div>
+
+</section>
+
+<section class="contact">
+<h2>Contact Us</h2>
+<p>Email: info@mybusiness.com</p>
+<p>Phone: +971 000 000 000</p>
+</section>
+
+<footer>
+<p>© 2025 My Business. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
